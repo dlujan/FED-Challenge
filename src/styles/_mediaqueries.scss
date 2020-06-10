@@ -1,0 +1,30 @@
+@media screen and (min-width: 769px) {
+    .Header {
+        & .product-nav {
+            justify-content: flex-start;
+        }
+        & .main-nav {
+            & .mobile-nav {
+                display: none;
+            }
+            & .full-nav {
+                position: relative;
+                flex-direction: row;
+                justify-content: space-between;
+                height: auto;
+                width: auto;
+                transform: translateX(0%);
+                & ul {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+
+    .Hero {
+        height: 65vh;
+        & .content-container {
+            font-size: 1.3em;
+        }
+    }
+}

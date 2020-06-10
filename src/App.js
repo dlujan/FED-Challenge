@@ -1,14 +1,26 @@
 import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import MediaSlider from './components/MediaSlider';
+import CardsLibrary from './components/CardsLibrary';
+import EquipmentCards from './components/EquipmentCards';
+import Footer from './components/Footer';
 import './App.scss';
-import { HelloWorld } from './js/scripts';
 
-function App() {
-  HelloWorld();
-  return (
-    <div className="App">
-      <h1>FED Challenge</h1>
-    </div>
-  );
+class App extends React.Component {
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Hero />
+        <MediaSlider />
+        <CardsLibrary />
+        <EquipmentCards />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;
