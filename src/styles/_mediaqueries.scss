@@ -6,11 +6,16 @@
             margin-bottom: 14px;
         }
     }
+
+    .equipment-cards .cards-container .card {
+        width: 35%;
+        margin: 10px;
+    }
 }
 
 // Desktop Size
 @media screen and (min-width: 769px) {
-    .Header {
+    header {
         & .product-nav {
             justify-content: flex-start;
         }
@@ -42,5 +47,9 @@
     .cards-library .cards-container .card {
         width: 22%;
         font-size: 0.7em;
+    }
+
+    .equipment-cards .cards-container .card {
+        width: 14%;
     }
 }

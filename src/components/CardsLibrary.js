@@ -49,9 +49,13 @@ export default class CardsLibrary extends Component {
                                         <div className="image-container"><img src={card.img} alt={`${card.title}`}/>
                                             {card.workouts && (
                                                 <div className="workouts">
-                                                    <div>{card.workouts}</div>
+                                                    <p>{card.workouts}</p>
                                                     <span>WORKOUTS</span>
-                                                    <div>X</div>
+                                                    <div className="menu">
+                                                        <div className="line"></div>
+                                                        <div className="line"></div>
+                                                        <div className="line"></div>
+                                                    </div>
                                                 </div>
                                             )}
                                         </div>
