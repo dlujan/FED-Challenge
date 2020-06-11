@@ -1,3 +1,14 @@
+// Ipad/Tablet size
+@media screen and (min-width: 426px) {
+    .cards-library .cards-container .card {
+        width: 47%;
+        & .card-inner .content-container .text {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+// Desktop Size
 @media screen and (min-width: 769px) {
     .Header {
         & .product-nav {
@@ -26,5 +37,10 @@
         & .content-container {
             font-size: 1.3em;
         }
+    }
+
+    .cards-library .cards-container .card {
+        width: 22%;
+        font-size: 0.7em;
     }
 }

@@ -1,0 +1,64 @@
+// Cards Library
+.cards-library {
+    margin: 35px auto;
+    width: 95%;
+    & .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        & .card {
+            width: 100%;
+            margin: 10px;
+            border-radius: 3px;
+            box-shadow: 0px 1px 3px 1px rgb(184, 184, 184);
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            & .card-inner {
+                & .image-container {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                    & img {
+                        width: 100%;
+                    }
+                    & .workouts {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 97%;
+                        width: 33.33%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        color: #ffffff;
+                        background: #000C28;
+                        opacity: 54%;
+                    }
+                }
+                & .content-container {
+                    display: flex;
+                    padding: 10px 15px;
+                    // min-height: 96px;
+                    & .text {
+                        width: 80%;
+                        margin-bottom: 35px;
+                        & h3 {
+                            margin-top: 5px;
+                        }
+                    }
+                    & .thumbnail {
+                        width: 20%;
+                        height: 10%;
+                        text-align: right;
+                        & img {
+                            width: 60%;
+                            margin-top: 5px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
