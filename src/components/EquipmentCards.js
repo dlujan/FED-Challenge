@@ -11,27 +11,27 @@ export default class EquipmentCards extends Component {
                 <p>Interested in our exciting iFit-enabled equipment?</p>
                 <div className="cards-container">
                     <div className="card">
-                        <div>
+                        <div className="card-interior">
                             <div className="image-container"><img src={img1} alt="Treadmills"/></div>
-                            <p>Treadmills</p>
+                            <div className="equip-text"><p>Treadmills</p></div>
                         </div>
                     </div>
                     <div className="card">
-                        <div>
+                        <div className="card-interior">
                             <div className="image-container"><img src={img2} alt="Bikes"/></div>
-                            <p>Bikes</p>
+                            <div className="equip-text"><p>Bikes</p></div>
                         </div>
                     </div>
                     <div className="card">
-                        <div>
+                        <div className="card-interior">
                             <div className="image-container"><img src={img3} alt="Ellipticals"/></div>
-                            <p>Ellipticals</p>
+                            <div className="equip-text"><p>Ellipticals</p></div>
                         </div>
                     </div>
                     <div className="card">
-                        <div>
+                        <div className="card-interior">
                             <div className="image-container"><img src={img4} alt="Strength"/></div>
-                            <p>Strength</p>
+                            <div className="equip-text"><p>Strength</p></div>
                         </div>
                     </div>
                 </div>

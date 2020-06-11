@@ -2,7 +2,7 @@
 @media screen and (min-width: 426px) {
     .cards-library .cards-container .card {
         width: 47%;
-        & .card-inner .content-container .text {
+        .card-inner .content-container .text {
             margin-bottom: 14px;
         }
     }
@@ -11,27 +11,63 @@
         width: 35%;
         margin: 10px;
     }
+
+    footer .links {
+        flex-direction: row;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 30px;
+        .menu-container {
+            border: none;
+            width: 22%;
+            .menu-button {
+                margin-bottom: 12px;
+            }
+            ul {
+                display: block;
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .menu-button i {
+            display: none;
+        }
+    }
+    footer .social {
+        border-top: solid 2px #585A5D;
+    }
+    footer .footer-bottom .legal {
+        display: block;
+    }
 }
 
 // Desktop Size
 @media screen and (min-width: 769px) {
     header {
-        & .product-nav {
+        .product-nav {
             justify-content: flex-start;
         }
-        & .main-nav {
-            & .mobile-nav {
+        .main-nav {
+            font-size: 0.9em;
+            .mobile-nav {
                 display: none;
             }
-            & .full-nav {
+            .full-nav {
                 position: relative;
                 flex-direction: row;
                 justify-content: space-between;
+                align-items: center;
+                padding: 2%;
                 height: auto;
                 width: auto;
                 transform: translateX(0%);
-                & ul {
+                ul {
                     flex-direction: row;
+                    margin: 0;
+                }
+                li {
+                    margin: 0 25px;
                 }
             }
         }
@@ -39,7 +75,7 @@
 
     .Hero {
         height: 65vh;
-        & .content-container {
+        .content-container {
             font-size: 1.3em;
         }
     }
@@ -51,5 +87,31 @@
 
     .equipment-cards .cards-container .card {
         width: 14%;
+    }
+
+    footer {
+        .link {
+            justify-content: space-around;
+            font-size: 0.8em;
+            .menu-container {
+                width: 15%;
+            }
+        }
+        .footer-bottom {
+            flex-direction: row;
+            div {
+                margin: 0 4%;
+            }
+            .legal {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+// Larger monitor
+@media screen and (min-width: 1025px) {
+    .equipment-cards .cards-container .card {
+      width: 16%;
     }
 }

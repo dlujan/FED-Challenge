@@ -20,14 +20,14 @@ export default class Header extends Component {
                 <header>
                     <nav className="product-nav">
                         <ul>
-                            <li><a href="!#">Blog</a></li>
-                            <li><a href="!#">Nourish</a></li>
-                            <li><a href="!#">Shop</a></li>
+                            <li style={{borderLeft: 'solid 1px #D5D6D6'}}><a href="!#">Blog</a></li>
+                            <li style={{borderLeft: 'solid 1px #D5D6D6', borderRight: 'solid 1px #D5D6D6'}}><a href="!#">Nourish</a></li>
+                            <li style={{borderRight: 'solid 1px #D5D6D6'}}><a href="!#">Shop</a></li>
                         </ul>
                     </nav>
                     <nav className="main-nav">
                         <div className="mobile-nav">
-                            <div><img src={iFitLogo} alt="iFit logo"/></div>
+                            <div><a href="!#"><img src={iFitLogo} alt="iFit logo"/></a></div>
                             <div className={`burger-toggle ${this.state.mobileMenuOpen ? 'mobile-menu-open' : ''}`} onClick={this.handleMenuOpen}>
                                 <div className="line"></div>
                                 <div className="line"></div>
@@ -35,7 +35,7 @@ export default class Header extends Component {
                             </div>
                         </div>
                         <div className="full-nav" style={{transform: this.state.mobileMenuOpen ? 'translateX(0%)' : ''}}>
-                            <div><img src={iFitLogo} alt="iFit logo"/></div>
+                            <div><a href="!#"><img src={iFitLogo} alt="iFit logo"/></a></div>
                             <ul>
                                 <li><a href="!#">Exercise</a></li>
                                 <li><a href="!#">Nutrition</a></li>

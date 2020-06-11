@@ -2,25 +2,25 @@
 .cards-library {
     margin: 35px auto;
     width: 95%;
-    & .cards-container {
+    .cards-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        & .card {
+        .card {
             width: 100%;
             margin: 10px;
             border-radius: 3px;
             box-shadow: 0px 1px 3px 1px rgb(184, 184, 184);
             cursor: pointer;
             transition: all 0.3s ease 0s;
-            & .image-container {
+            .image-container {
                 position: relative;
                 width: 100%;
                 height: auto;
-                & img {
+                img {
                     width: 100%;
                 }
-                & .workouts {
+                .workouts {
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -33,19 +33,19 @@
                     color: #ffffff;
                     background: #000C28;
                     opacity: 54%;
-                    & p {
+                    p {
                         font-family: 'Oswald', sans-serif;
                         font-size: 1.5em;
                         margin: 5px 0;
 
                     }
-                    & span {
+                    span {
                         font-weight: 700;
                         font-size: 0.8em;
                     }
-                    & .menu {
+                    .menu {
                         cursor: pointer;
-                        & .line {
+                        .line {
                             width: 18px;
                             height: 1px;
                             margin: 4px;
@@ -55,21 +55,30 @@
                     }
                 }
             }
-            & .content-container {
+            .content-container {
                 display: flex;
                 padding: 10px 15px;
-                & .text {
+                .text {
                     width: 80%;
                     margin-bottom: 35px;
-                    & h3 {
+                    h3 {
                         margin-top: 5px;
                     }
+                    p {
+                        font-weight: 700;
+                    }
+                    span {
+                        margin-right: 10px;
+                    }
+                    img {
+                        width: 5%;
+                    }
                 }
-                & .thumbnail {
+                .thumbnail {
                     width: 20%;
                     height: 10%;
                     text-align: right;
-                    & img {
+                    img {
                         width: 60%;
                         margin-top: 5px;
                         border-radius: 5px;

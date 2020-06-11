@@ -9,8 +9,19 @@
 }
 ul,
 button,
-span {
+span,
+a {
     font-family: 'Open Sans', sans-serif;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 ul {
@@ -18,7 +29,7 @@ ul {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
-    & a {
+    a {
         text-decoration: none;
     }
 }

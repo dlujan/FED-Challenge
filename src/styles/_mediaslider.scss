@@ -2,13 +2,13 @@
 .cards-slider {
     position: relative;
     margin: 0 auto;
-    & .cards-slider-wrapper {
+    .cards-slider-wrapper {
         display: flex;
         justify-content: space-evenly;
         padding: 20px;
         background: #eee;
         overflow-x: hidden;
-        & .card {
+        .card {
             flex: 1;
             min-width: 250px;
             padding: 32px 16px;
@@ -18,7 +18,7 @@
             background: #ffffff;
             text-align: center;
             font-size: 0.6em;
-            & img {
+            img {
                 width: 35%;
             }
         }
