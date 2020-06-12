@@ -5,9 +5,9 @@ export default class Hero extends Component {
         return (
             <div className="Hero">
                 <div className="content-container">
-                    <h1>The best personal training,
-                        <br/>
-                        right in your own home
+                    <h1>
+                        <span>The best personal training,</span>
+                        <span>right in your own home</span>
                     </h1>
                     <button>Join iFit Coach</button>
                 </div>

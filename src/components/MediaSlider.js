@@ -15,6 +15,7 @@ export default class MediaSlider extends Component {
             ]
         }
     }
+    
     render() {
         return (
             <div className="cards-slider">

@@ -17,7 +17,7 @@ export default class Header extends Component {
     render() {
         return (
             <div>
-                <header>
+                <header ref={this.headerRef}>
                     <nav className="product-nav">
                         <ul>
                             <li style={{borderLeft: 'solid 1px #D5D6D6'}}><a href="!#">Blog</a></li>
@@ -37,10 +37,10 @@ export default class Header extends Component {
                         <div className="full-nav" style={{transform: this.state.mobileMenuOpen ? 'translateX(0%)' : ''}}>
                             <div><a href="!#"><img src={iFitLogo} alt="iFit logo"/></a></div>
                             <ul>
-                                <li><a href="!#">Exercise</a></li>
-                                <li><a href="!#">Nutrition</a></li>
-                                <li><a href="!#">Activity</a></li>
-                                <li><a href="!#">Sleep</a></li>
+                                <li><a href="!#" onClick={this.handleMenuOpen}>Exercise</a></li>
+                                <li><a href="!#" onClick={this.handleMenuOpen}>Nutrition</a></li>
+                                <li><a href="!#" onClick={this.handleMenuOpen}>Activity</a></li>
+                                <li><a href="!#" onClick={this.handleMenuOpen}>Sleep</a></li>
                             </ul>
                             <div className="signup-btn">
                                 <button>Sign Up</button>

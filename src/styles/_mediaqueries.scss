@@ -1,5 +1,11 @@
 // Ipad/Tablet size
 @media screen and (min-width: 426px) {
+    // Header
+    h1 {
+        font-size: 2.8em;
+    }
+
+    // Cards Library
     .cards-library .cards-container .card {
         width: 47%;
         .card-inner .content-container .text {
@@ -7,11 +13,13 @@
         }
     }
 
+    // Equipment Cards
     .equipment-cards .cards-container .card {
         width: 35%;
         margin: 10px;
     }
 
+    // Footer
     footer .links {
         flex-direction: row;
         width: 70%;
@@ -44,6 +52,7 @@
 
 // Desktop Size
 @media screen and (min-width: 769px) {
+    // Header
     header {
         .product-nav {
             justify-content: flex-start;
@@ -73,6 +82,7 @@
         }
     }
 
+    // Hero
     .Hero {
         height: 65vh;
         .content-container {
@@ -80,15 +90,18 @@
         }
     }
 
+    // Cards Library
     .cards-library .cards-container .card {
         width: 22%;
         font-size: 0.7em;
     }
 
+    // Equipment Cards
     .equipment-cards .cards-container .card {
         width: 14%;
     }
 
+    // Footer
     footer {
         .link {
             justify-content: space-around;
@@ -111,6 +124,7 @@
 
 // Larger monitor
 @media screen and (min-width: 1025px) {
+    // Equipment Cards
     .equipment-cards .cards-container .card {
       width: 16%;
     }

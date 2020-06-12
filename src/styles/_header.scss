@@ -1,7 +1,10 @@
 // Header
 header {
+    width: 100%;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease 0s;
     li a {
         color: rgb(110, 110, 110);
         font-weight: 600;
@@ -79,7 +82,7 @@ header {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
 }
 .mobile-menu-open .line:nth-child(2) {
     position: absolute;
@@ -91,5 +94,5 @@ header {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    transform: translateY(6px) rotate(-45deg);
 }
