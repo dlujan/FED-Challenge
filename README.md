@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Building out a mockup of a web page using React
 
+![picture](img/screenshot.png)
+
 ## Running
 
 Install npm modules then run the app to view
