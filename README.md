@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Building out a mockup of a web page using React
 
-![picture](img/screenshot.png)
+![screenshot](src/images/screenshot.png)
 
 ## Running
 
